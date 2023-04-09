@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+#home img{
+    height: 200px;
+    object-fit: cover;
+}
+#carouselHome .caro usel-item img{
+    height: 70vh;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .row .card{
+    width: 10px;
+} */
+
+.card .img{
+    margin-left: 35px;
+    width: 250px;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.card{
+    background-color: gray;
+}
+.card-body{
+    background-color: #ADD8E6;
+}
+
+.container-fluid{
+    background: slategray;
+    padding: 10px;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.nav-link{
+    background-color: deepskyblue;
+    color: white;
+    margin-left: 20px;
+    width: 250px;
+    height: 35px;
+    text-align: center;
+}
