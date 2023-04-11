@@ -31,6 +31,7 @@ include 'layout/navbar.php';
                         <h6 class="card-text">Rp. <?= number_format($data['harga'], 0, ',', '.'); ?></h6>
                         <p class="text-secondary">Tersisa : <?= $data['stok']; ?> Barang</p>
                         <a href="detail.php?id=<?= $data["id_produk"]; ?>" class="btn btn-success"><i class="fa-solid fa-basket-shopping me-2"></i>Pesan Sekarang</a>
+                        <a href="detail_barang.php?id=<?= $data['id_produk']; ?>" class="btn btn-primary">Detail</a>
                     </div>
                 </div>
             </div>

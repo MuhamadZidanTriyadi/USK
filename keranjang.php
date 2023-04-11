@@ -51,6 +51,7 @@ if(empty($_SESSION["cart"]|| isset($_SESSION["cart"]))){
         </tr>
     </table>
     <a class="btn btn-primary" href="checkout.php">Checkout</a>
+    <a class="btn btn-outline-primary" href="index.php">Continue Shopping</a>
 </div>
 <?php 
 include 'layout/footer.php';

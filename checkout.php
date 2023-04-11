@@ -18,7 +18,7 @@ if (empty($_SESSION["cart"] || isset($_SESSION["cart"]))) {
             <form action="" method="POST">
                 <div class="mb-3">
                     <label class="form-label" for="tanggal_transaksi">Tanggal Transaksi</label><br>
-                    <input class="form-control" type="date" name="tanggal_transaksi" id="tanggal_transaksi" value="<?= date('Y-m-d'); ?>">
+                    <input class="form-control" type="date" name="tanggal_transaksi"  value="<?= date('Y-m-d'); ?>">
                 </div>
 
                 <div class="mb-3">
@@ -88,6 +88,10 @@ if (isset($_POST['checkout'])) {
         echo mysqli_error($conn);
     }
 }
+// unset($_SESSION['cart']);
+// header('location:../order/');
+
+
 ?>
 <?php include 'layout/footer.php'; ?>
 <!-- Fungsi Checkout -->

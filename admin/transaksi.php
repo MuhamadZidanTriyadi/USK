@@ -58,7 +58,7 @@ $verifikasi = mysqli_query($conn, "SELECT * FROM transaksi WHERE status ='terver
                     <td><?= $data["alamat"]; ?></td>
                     <td><?= $data["no_telp"]; ?></td>
                     <td><?= $data["nama_produk"]; ?></td>
-                    <td>Rp. <?= number_format($data["subtotal"]);  ?></td>
+                    <td>Rp. <?= number_format($data["subtotal"], 0, ',', '.');  ?></td>
                     <td><img src="../image/<?= $data["foto"]; ?>" alt="" width="70"></td>
                     <td><?= $data["status"]; ?></td>
                     <td>
