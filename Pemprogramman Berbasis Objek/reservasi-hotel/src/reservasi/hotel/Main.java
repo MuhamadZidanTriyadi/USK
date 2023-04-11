@@ -18,6 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
         
+        String name;
         int type, waktu;
         boolean looping = true;
         String lanjut;
@@ -37,6 +38,12 @@ public class Main {
             System.out.println("|  >= 5 Hari |  80.000/night | 120.000/night | 160.000/night |");
             System.out.println("|------------------------------------------------------------|");
 
+            
+            Scanner nama = new Scanner(System.in);
+            System.out.println("Masukkan Nama Anda : ");
+            name = nama.next();
+            hotel.setName(name);
+            
             System.out.println("Pilih Jenis Kamar");
             System.out.println("1. Superior");
             System.out.println("2. Deluxe");
@@ -60,9 +67,10 @@ public class Main {
                 hotel.setWaktu(waktu);
 
                 System.out.println("================= Nota Pembayaran =================");
+                System.out.println("Nama Pelanggan    : " + hotel.getName  ());
                 System.out.println("Jenis Kamar       : " + hotel.get_kamar());
                 System.out.println("Tarif Penginapan  : Rp." + hotel.get_harga());
-                System.out.println("Lama Menginap     : " + waktu);
+                System.out.println("Lama Menginap     : " + waktu + "Hari");
                 System.out.println("Total Pembayaran  : Rp." + hotel.get_total());
                 System.out.println("===================================================");
 

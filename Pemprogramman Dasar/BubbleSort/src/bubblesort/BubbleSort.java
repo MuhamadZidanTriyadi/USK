@@ -19,23 +19,23 @@ public class BubbleSort {
      */
     public static void main(String[] args) {
         
-        int jumlah, i, j, a, metode, total = 0, swap;
+        int jumlah, i, j, a, b, c, metode, total = 0, swap;
         
         int average;
         
         ArrayList <Integer> NilaiArray = new ArrayList<Integer>();
         
         Scanner scan = new Scanner(System.in);
-        System.out.println("Masukan Tiga Buah Nilai");
+        System.out.println("Masukan Lima Buah Nilai");
         
         System.out.println("--------------------------------------------------");
         
-        jumlah = 3;
+        jumlah = 5;
         int angka[] = new int [jumlah];
         
         for(i=0; i<jumlah; i++)
         {
-            System.out.print("Masukan Nilai Ke-" + (i+1) + ":");
+            System.out.print("Masukan Nilai " + (i+1) + ":");
             angka[i] = scan.nextInt();
             total += angka[i];
             NilaiArray.add(angka[i]);
@@ -74,7 +74,7 @@ public class BubbleSort {
             }
         }
         
-        System.out.print("\nUrutan Milai Descending : ");
+        System.out.print("\nUrutan Nilai Descending : ");
         for(i=0; i<jumlah; i++)
         {
             System.out.print(angka[i] + " ");

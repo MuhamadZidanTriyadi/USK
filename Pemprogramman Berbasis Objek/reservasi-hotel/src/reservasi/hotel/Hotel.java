@@ -11,7 +11,16 @@ package reservasi.hotel;
  */
 public class Hotel {
    protected int type, waktu;
+   protected String name;
    
+   
+   public String getName(){
+       return name;
+   }
+   
+   public void setName(String name){
+       this.name = name;
+   }
    public int getType()
    {
        return type;
